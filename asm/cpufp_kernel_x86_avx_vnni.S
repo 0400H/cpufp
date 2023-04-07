@@ -13,16 +13,16 @@ cpufp_kernel_x86_avx_vnni_int8:
     vpxor %ymm8, %ymm8, %ymm8
     vpxor %ymm9, %ymm9, %ymm9
 .cpufp.x86.avx.vnni.int8.L1:
-    {vex} vpdpbusd %ymm0, %ymm0, %ymm0
-    {vex} vpdpbusd %ymm1, %ymm1, %ymm1
-    {vex} vpdpbusd %ymm2, %ymm2, %ymm2
-    {vex} vpdpbusd %ymm3, %ymm3, %ymm3
-    {vex} vpdpbusd %ymm4, %ymm4, %ymm4
-    {vex} vpdpbusd %ymm5, %ymm5, %ymm5
-    {vex} vpdpbusd %ymm6, %ymm6, %ymm6
-    {vex} vpdpbusd %ymm7, %ymm7, %ymm7
-    {vex} vpdpbusd %ymm8, %ymm8, %ymm8
-    {vex} vpdpbusd %ymm9, %ymm9, %ymm9
+    vpdpbusd %ymm0, %ymm0, %ymm0
+    vpdpbusd %ymm1, %ymm1, %ymm1
+    vpdpbusd %ymm2, %ymm2, %ymm2
+    vpdpbusd %ymm3, %ymm3, %ymm3
+    vpdpbusd %ymm4, %ymm4, %ymm4
+    vpdpbusd %ymm5, %ymm5, %ymm5
+    vpdpbusd %ymm6, %ymm6, %ymm6
+    vpdpbusd %ymm7, %ymm7, %ymm7
+    vpdpbusd %ymm8, %ymm8, %ymm8
+    vpdpbusd %ymm9, %ymm9, %ymm9
     sub $0x1, %rdi
     jne .cpufp.x86.avx.vnni.int8.L1
     ret
@@ -39,16 +39,16 @@ cpufp_kernel_x86_avx_vnni_int16:
     vpxor %ymm8, %ymm8, %ymm8
     vpxor %ymm9, %ymm9, %ymm9
 .cpufp.x86.avx.vnni.int16.L1:
-    {vex} vpdpwssd %ymm0, %ymm0, %ymm0
-    {vex} vpdpwssd %ymm1, %ymm1, %ymm1
-    {vex} vpdpwssd %ymm2, %ymm2, %ymm2
-    {vex} vpdpwssd %ymm3, %ymm3, %ymm3
-    {vex} vpdpwssd %ymm4, %ymm4, %ymm4
-    {vex} vpdpwssd %ymm5, %ymm5, %ymm5
-    {vex} vpdpwssd %ymm6, %ymm6, %ymm6
-    {vex} vpdpwssd %ymm7, %ymm7, %ymm7
-    {vex} vpdpwssd %ymm8, %ymm8, %ymm8
-    {vex} vpdpwssd %ymm9, %ymm9, %ymm9
+    vpdpwssd %ymm0, %ymm0, %ymm0
+    vpdpwssd %ymm1, %ymm1, %ymm1
+    vpdpwssd %ymm2, %ymm2, %ymm2
+    vpdpwssd %ymm3, %ymm3, %ymm3
+    vpdpwssd %ymm4, %ymm4, %ymm4
+    vpdpwssd %ymm5, %ymm5, %ymm5
+    vpdpwssd %ymm6, %ymm6, %ymm6
+    vpdpwssd %ymm7, %ymm7, %ymm7
+    vpdpwssd %ymm8, %ymm8, %ymm8
+    vpdpwssd %ymm9, %ymm9, %ymm9
     sub $0x1, %rdi
     jne .cpufp.x86.avx.vnni.int16.L1
     ret
